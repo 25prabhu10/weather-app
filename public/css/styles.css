@@ -81,8 +81,12 @@ h1 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 18px;
   margin: 20px 0;
+}
+
+#message-1 {
+  font-size: 23px;
 }
 
 input {
