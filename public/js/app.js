@@ -16,7 +16,13 @@ weatherForm.addEventListener('submit', (e) => {
         messageOne.textContent = data.error;
       } else {
         messageOne.textContent = data.location;
-        messageTwo.textContent = data.forecast;
+        messageTwo.textContent =
+          data.forecast.description[0] +
+          ' - Temperature is ' +
+          data.forecast.temperature +
+          "'C and Humidity is at " +
+          data.forecast.humidity +
+          '%';
       }
     });
   });
